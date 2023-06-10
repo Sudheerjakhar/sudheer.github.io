@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@300&family=Wix+Madefor+Text&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translateY(10rem);
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+#dragContainer {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#dropContainer {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.dragItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    cursor: move;
+    box-sizing: border-box;
+}
+
+.dragItem img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.dragItem span {
+    margin-right: 10px;
+}
+
+.dragItem i {
+    color: gold;
+}
+
+button {
+    border: 2px solid white;
+    color: white;
+    background-color: #4848db;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10rem);
+}
+
+button:hover {
+    color: #4848db;
+    background-color: white;
+    border: 2px solid #4848db;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    #dragContainer,
+    #dropContainer {
+        width: 50%;
+    }
+}
